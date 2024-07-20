@@ -6,13 +6,9 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.os.Build;
 /**
- * Главный класс приложения
+ * Главный класс приложения started
  * 21.08.2020. Russia, Sharapova Okhota
  * @author arkady_gobuzov
- * https://question-it.com/questions/840231/kljuch-razvertyvanija-i-zagruzki-dlja-google-play-kak-ispolzovat-ih-s-cordova
- * https://question-it.com/questions/7527280/podpisanie-apk-s-pomoschju-kljucha-zagruzki-predostavlennogo-google-play
- * https://prishanmaduka.medium.com/generate-hash-keys-properly-for-android-sms-retriever-api-c26b9be42ddc
- * https://support.google.com/googleplay/android-developer/answer/9842756
  */
 public class App extends Application {
     //todo push **, nextreg errors
