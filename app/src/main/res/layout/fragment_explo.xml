@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:id="@+id/header">
+        <ImageButton
+            android:id="@+id/load"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:padding="3dp"
+            android:src="@drawable/load"
+            android:layout_centerVertical="true"
+            android:contentDescription="load file"/>
+        <ImageButton
+            android:id="@+id/type"
+            android:src="@drawable/zxtape"
+            android:layout_toRightOf="@+id/load"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:padding="3dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="open tape"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/basic"
+            android:layout_toRightOf="@+id/type"
+            android:src="@drawable/zxb"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="basic"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/dump"
+            android:src="@drawable/zxbinary"
+            android:layout_toRightOf="@+id/basic"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="dump"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/code"
+            android:src="@drawable/zxz80"
+            android:layout_toRightOf="@+id/dump"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="code"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/share"
+            android:layout_toRightOf="@+id/code"
+            android:src="@drawable/zxtext"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="address"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/zxrom"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="about"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

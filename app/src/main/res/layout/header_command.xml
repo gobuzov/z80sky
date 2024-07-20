@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/header_command">
+<TextView
+    android:id="@+id/command"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Command"
+    android:layout_centerVertical="true"
+    android:paddingLeft="5dp"
+    android:textColor="#111111"
+    android:textSize="24dp" />
+    <TextView
+        android:id="@+id/bytes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tacts"
+        android:paddingRight="4dp"
+        android:text="Bytes"
+        android:textColor="#111111"
+        android:textSize="15dp" />
+<TextView
+    android:id="@+id/tacts"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_toLeftOf="@+id/fc"
+    android:text=" t "
+    android:textAlignment="center"
+    android:textColor="#111111"
+    android:textSize="14dp"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/fc"
+    android:layout_width="16dp"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_toLeftOf="@+id/fz"
+    android:text="C"
+    android:textAlignment="center"
+    android:textColor="#111111"
+    android:textSize="16dp"
+    android:textStyle="bold" />
+<TextView
+    android:id="@+id/fz"
+    android:layout_width="16dp"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@+id/fpv"
+    android:layout_centerVertical="true"
+    android:textStyle="bold"
+    android:text="Z"
+    android:textAlignment="center"
+    android:textColor="#111111"
+    android:textSize="16dp" />
+<TextView
+    android:id="@+id/fpv"
+    android:layout_width="27dp"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@+id/fs"
+    android:text="P/V"
+    android:maxLines="1"
+    android:textAlignment="center"
+    android:textStyle="bold"
+    android:layout_centerVertical="true"
+    android:textColor="#111111"
+    android:textSize="16dp" />
+<TextView
+    android:id="@+id/fs"
+    android:layout_width="16dp"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@+id/fn"
+    android:text="S"
+    android:textStyle="bold"
+    android:layout_centerVertical="true"
+    android:textAlignment="center"
+    android:textColor="#111111"
+    android:textSize="16dp" />
+<TextView
+    android:id="@+id/fn"
+    android:layout_width="16dp"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@+id/fh"
+    android:text="N"
+    android:textStyle="bold"
+    android:layout_centerVertical="true"
+    android:textAlignment="center"
+    android:textColor="#111111"
+    android:textSize="16dp" />
+<TextView
+    android:id="@+id/fh"
+    android:layout_width="16dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:text="H"
+    android:textAlignment="center"
+    android:textStyle="bold"
+    android:layout_centerVertical="true"
+    android:textColor="#111111"
+    android:textSize="16dp" />
+</RelativeLayout>
