@@ -11,45 +11,53 @@
         android:src="@drawable/play_store_512"/>
     <TextView
         android:padding="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="@string/abt_name" android:textSize="24sp"/>
-    <TextView
-        android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="@string/abt_author" android:textSize="16sp"/>
-    <TextView
-        android:padding="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="@string/abt_based" android:textSize="16sp"/>
-    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:text="@string/abt_name" android:textSize="24sp"/>
+    <TextView
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/made4"/>
+    <TextView android:textColor="#2659a6"
+              android:id="@+id/grup1"
+              android:layout_width="wrap_content"
+              android:layout_height="36dp"
+              android:text="@string/grup_link1" android:textSize="16sp"/>
+    <TextView android:textColor="#2659a6"
+              android:id="@+id/grup2"
+              android:layout_width="wrap_content"
+              android:layout_height="36dp"
+              android:text="@string/grup_link2" android:textSize="16sp"/>
+    <TextView android:textColor="#2659a6"
+              android:id="@+id/grup3"
+              android:layout_width="wrap_content"
+              android:layout_height="36dp"
+              android:text="@string/grup_link3" android:textSize="16sp"/>
+    <TextView
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/abt_based"/>
+
     <TextView android:textColor="#2659a6"
         android:id="@+id/link1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="36dp"
         android:text="@string/abt_link1" android:textSize="16sp"/>
     <TextView android:textColor="#2659a6"
         android:id="@+id/link2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="36dp"
         android:text="@string/abt_link2" android:textSize="16sp"/>
     <TextView android:textColor="#2659a6"
         android:id="@+id/link3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="36dp"
         android:text="@string/abt_link3" android:textSize="16sp"/>
     <TextView android:textColor="#2659a6"
         android:id="@+id/link4"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="36dp"
         android:text="@string/abt_link4" android:textSize="14sp"/>
-</LinearLayout>
 </LinearLayout>

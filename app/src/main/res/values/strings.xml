@@ -1,7 +1,4 @@
 <resources>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-
     <string name="app_name">z80sky</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -29,13 +26,17 @@
     <string name="hex_upper">Hexadecimal numbers in UPPER case</string>
     <string name="hex_mode">Hex mode</string>
     <string name="drw_desc">Reference Tool for Z80 CPU</string>
-    <string name="abt_name">z80sky version 1.31</string>
+    <string name="abt_name">z80sky version 1.41</string>
     <string name="abt_author">Made by Arcadiy Gobuzov\nSharapova Okhota. Russia</string>
+    <string name="made4">Made for persons from:</string>
     <string name="abt_based">Based on materials from</string>
     <string name="abt_link1">https://clrhome.org/table</string>
     <string name="abt_link2">https://wiki.specnext.dev</string>
     <string name="abt_link3">http://z80.info/z80syntx.htm</string>
     <string name="abt_link4">http://www.zilog.com/docs/z80/UM0080.pdf</string>
+    <string name="grup_link1">https://www.facebook.com/groups/z80asm</string>
+    <string name="grup_link2">https://www.facebook.com/groups/specnext</string>
+    <string name="grup_link3">https://t.me/zxcoding</string>
     <string name="sysvar_n">Poking the variable will have no lasting effect.</string>
     <string name="sysvar_x">The variable should not be poked because the system might crash.</string>
     <string name="hint_command">Mnemonic, hex, dec, bin</string>

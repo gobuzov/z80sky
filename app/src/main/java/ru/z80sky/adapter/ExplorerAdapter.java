@@ -7,6 +7,7 @@ import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
+import android.text.style.ForegroundColorSpan;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -109,17 +110,19 @@ public class ExplorerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                     int end = provider.getEndSelect(position);
                     Spannable spannable = new SpannableString(s);
                     int pos = position;
-                    //spannable.setSpan(new ForegroundColorSpan(Color.BLUE), begin, end, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-                    spannable.setSpan(new ClickableSpan() {
+
+                    ForegroundColorSpan fcs = new ForegroundColorSpan(Color.BLUE);
+                    spannable.setSpan(fcs, begin, end, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                    tv.setText(spannable, TextView.BufferType.SPANNABLE);
+                    tv.setMovementMethod(LinkMovementMethod.getInstance());
+                    tv.setOnClickListener(new View.OnClickListener() {
                         @Override
-                        public void onClick(View widget) {
+                        public void onClick(View view) {
                             int new_pos = provider.getLinkTo(pos);//(int) (Math.random() * provider.getCnt());
                             System.out.println("new_pos="+new_pos);
                             rv.scrollToPosition(new_pos);
                         }
-                    }, begin, end, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-                    tv.setText(spannable, TextView.BufferType.SPANNABLE);
-                    tv.setMovementMethod(LinkMovementMethod.getInstance());
+                    });
                 }
                 tv.setTag(new Integer(position));
                 tv.setBackgroundColor(provider.isChecked(position)? c.NEXT_BG : Color.WHITE);

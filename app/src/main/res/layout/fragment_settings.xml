@@ -7,11 +7,11 @@
     android:orientation="vertical">
 
     <Switch
-        android:id="@+id/spectrum_next"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:checked="true"
-        android:text="@string/spectrum_next" />
+            android:id="@+id/spectrum_next"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:checked="true"
+            android:text="@string/spectrum_next"/>
     <Switch
         android:id="@+id/hex_mode"
         android:layout_width="match_parent"
@@ -205,5 +205,4 @@
             android:layout_height="48dp"
             android:layout_weight="1" />
     </RadioGroup>
-
 </LinearLayout>

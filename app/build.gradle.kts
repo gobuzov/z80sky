@@ -10,8 +10,8 @@ android {
         applicationId = "ru.z80sky"
         minSdk = 22
         targetSdk = 34
-        versionCode = 4
-        versionName = "1.4"
+        versionCode = 5
+        versionName = "1.41"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
